@@ -247,6 +247,31 @@ php bin/magento s:d:c
 ```bash
 php bin/magento c:f
 ```
+
+## Final Structure
+
+```plaintext
+/var/www/magento2/app/code/Ecommerce/
+└── CatalogDisplay
+    ├── Block
+    │   └── Index.php
+    ├── Controller
+    │   └── Index
+    │       └── Index.php
+    ├── etc
+    │   ├── frontend
+    │   │   └── routes.xml
+    │   └── module.xml
+    └── view
+        └── frontend
+            ├── layout
+            │   └── catalogdisplay_index_index.xml
+            └── templates
+                └── content.phtml
+```
+
+
+
 # Final effect 
 
 After running the commands, you should see the content of the block displayed at the following URL:
