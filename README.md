@@ -142,6 +142,8 @@ This guide will help you set up a simple Magento 2 block that displays "Block co
 ```php
 <?php
 
+<?php
+
 namespace Ecommerce\CatalogDisplay\Block;
 
 use Magento\Framework\View\Element\Template;
@@ -150,9 +152,10 @@ class Index extends Template
 {
     public function getCatalogDisplayText()
     {
-        return "Hello World!";
+        return "Block content on index index page";
     }
 }
+
 ```
 
 ### 4. Set Up the `view` Directory Structure
@@ -164,8 +167,13 @@ class Index extends Template
 
 Add the following static content to the `content.phtml` file:
 
-```html
-<h1>Block content on index index page</h1>
+```php
+<?php
+// Access the block's method
+$blockContent = $block->getCatalogDisplayText();
+?>
+
+<h1><?php echo $blockContent; ?></h1>
 ```
 
 ### 4. Set Up the `Controller` Directory Structure
