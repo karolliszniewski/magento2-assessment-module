@@ -8,6 +8,6 @@ class Index extends Template
 {
     public function getCatalogDisplayText()
     {
-        return "Hello World!";
+        return "Block content on index index page2";
     }
 }
