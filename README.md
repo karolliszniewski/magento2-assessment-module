@@ -227,13 +227,14 @@ Add the following PHP code to the `catalogdisplay_index_index.xml` file:
 Add the following XML code to the `routes.xml` file:
 ```xml
 <?xml version="1.0"?>
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/Router/etc/routes.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="helloworld" frontName="helloworld">
-            <module name="Webdev_Helloworld" />
+        <route id="catalogdisplay" frontName="catalogdisplay">
+            <module name="Ecommerce_CatalogDisplay"/>
         </route>
     </router>
 </config>
+
 ```
 
 
