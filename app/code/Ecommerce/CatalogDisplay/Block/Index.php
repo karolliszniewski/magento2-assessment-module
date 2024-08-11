@@ -1,12 +1,12 @@
 <?php
 
-namespace Webdev\Helloworld\Block;
+namespace Ecommerce\CatalogDisplay\Block;
 
 use Magento\Framework\View\Element\Template;
 
 class Index extends Template
 {
-    public function getHelloWorldText()
+    public function getCatalogDisplayText()
     {
         return "Hello World!";
     }
